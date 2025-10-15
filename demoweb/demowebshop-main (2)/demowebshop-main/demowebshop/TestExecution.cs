@@ -20,7 +20,7 @@ namespace demowebshop
         public void Login_ValidCredentials()
         {
             CorePage.SeleniumInit();
-            loginPage.Login("https://demowebshop.tricentis.com/", "abbasiaqsa18@gmail.com", "Test@123");
+            loginPage.Login("https://demowebshop.tricentis.com/", "anasinam507@gmail.com", "Test@123");
             WebDriverWait wait = new WebDriverWait(CorePage.driver, TimeSpan.FromSeconds(10));
 
             String pageTitle = wait.Until(ExpectedConditions.ElementIsVisible
@@ -39,7 +39,7 @@ namespace demowebshop
         public void Login_invalidCredentials()
         {
             CorePage.SeleniumInit();
-            loginPage.Login("https://demowebshop.tricentis.com/", "abbasiaqsa18@gmail.com", "Test@123456");
+            loginPage.Login("https://demowebshop.tricentis.com/", "anasinam507@gmail.com", "Test@123456");
             WebDriverWait wait = new WebDriverWait(CorePage.driver, TimeSpan.FromSeconds(10));
 
             IWebElement errorElement = wait.Until(
@@ -57,7 +57,7 @@ namespace demowebshop
             CorePage.SeleniumInit();
             LoginPage loginPage = new LoginPage();
             HomePage homePage = new HomePage(); // Create an instance of HomePage
-            loginPage.Login("https://demowebshop.tricentis.com/", "abbasiaqsa18@gmail.com", "Test@123");
+            loginPage.Login("https://demowebshop.tricentis.com/", "anasinam507@gmail.com", "Test@123");
 
             homePage.AddLaptopToCart(); // Use the instance to call the method
             CorePage.driver.Close();
@@ -70,7 +70,7 @@ namespace demowebshop
 
             
             LoginPage login = new LoginPage();
-            login.Login("https://demowebshop.tricentis.com/", "abbasiaqsa18@gmail.com", "Test@123");
+            login.Login("https://demowebshop.tricentis.com/", "anasinam507@gmail.com", "Test@123");
 
             
             HomePage home = new HomePage();
@@ -89,7 +89,7 @@ namespace demowebshop
 
             // Login first
             LoginPage login = new LoginPage();
-            login.Login("https://demowebshop.tricentis.com/", "abbasiaqsa18@gmail.com", "Test@123");
+            login.Login("https://demowebshop.tricentis.com/", "anasinam507@gmail.com", "Test@123");
 
             // Add Laptop to Cart
             HomePage home = new HomePage();
@@ -118,7 +118,7 @@ namespace demowebshop
 
             // Login first
             LoginPage login = new LoginPage();
-            login.Login("https://demowebshop.tricentis.com/", "abbasiaqsa18@gmail.com", "Test@123");
+            login.Login("https://demowebshop.tricentis.com/", "anasinam507@gmail.com", "Test@123");
 
             // Add Laptop to Cart
             HomePage home = new HomePage();
