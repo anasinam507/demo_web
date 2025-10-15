@@ -1,4 +1,4 @@
-TC_001 ñ Login with Valid Credentials
+TC_001 ‚Äì Login with Valid Credentials
 
 Objective: Confirm that login works with correct credentials.
 
@@ -8,7 +8,7 @@ Type: Functional
 
 Prerequisites: A registered user must exist.
 
-Test Data: Email = abbasiaqsa18@gmail.com, 
+Test Data: Email = anasinam507@gmail.com, 
 Password = Test@123
 
 Steps:
@@ -21,9 +21,9 @@ Click on the Login button.
 
 Expected Result: User should be logged in successfully and redirected to the homepage.
 
-Acceptance Criteria: Home page should display ìWelcomeî message.
+Acceptance Criteria: Home page should display ‚ÄúWelcome‚Äù message.
 
-TC_002 ñ Login with Invalid Password 
+TC_002 ‚Äì Login with Invalid Password 
 
 Objective: Check error handling for wrong password.
 
@@ -33,7 +33,7 @@ Type: Negative
 
 Prerequisites: Valid user account exists.
 
-Test Data: Email = abbasiaqsa18@gmail.com
+Test Data: Email = anasinam507@gmail.com
 , Password = Test@123456
 
 Steps:
@@ -44,11 +44,11 @@ Enter valid email and incorrect password.
 
 Click Login.
 
-Expected Result: Error message should be displayed ñ ìLogin was unsuccessful.î
+Expected Result: Error message should be displayed ‚Äì ‚ÄúLogin was unsuccessful.‚Äù
 
 Acceptance Criteria: User remains on login page.
 
-TC_003 ñ Register New User
+TC_003 ‚Äì Register New User
 
 Objective: Ensure new user registration works with unique email.
 
@@ -58,7 +58,7 @@ Type: Functional/UI
 
 Prerequisites: None.
 
-Test Data: Email = abbasiaqsa12@gmail.com
+Test Data: Email = anasinam507@gmail.com
 , Password = Test@123
 
 Steps:
@@ -73,9 +73,9 @@ Expected Result: Registration should be successful, and user should be logged in
 
 Acceptance Criteria: Success message is shown.
 
-TC_004 ñ Navigate to Notebooks Page
+TC_004 ‚Äì Navigate to Notebooks Page
 
-Objective: Verify navigation to ìNotebooksî under ìComputers.î
+Objective: Verify navigation to ‚ÄúNotebooks‚Äù under ‚ÄúComputers.‚Äù
 
 Priority: P1
 
@@ -83,17 +83,17 @@ Type: Functional/UI
 
 Steps:
 
-Hover over ìComputers.î
+Hover over ‚ÄúComputers.‚Äù
 
-Click on ìNotebooks.î
+Click on ‚ÄúNotebooks.‚Äù
 
 Expected Result: Notebooks page should open.
 
 Acceptance Criteria: URL contains /notebooks.
 
-TC_005 ñ Add Laptop to Cart
+TC_005 ‚Äì Add Laptop to Cart
 
-Objective: Add ì14.1-inch Laptopî to cart and validate cart update.
+Objective: Add ‚Äú14.1-inch Laptop‚Äù to cart and validate cart update.
 
 Priority: P0
 
@@ -101,15 +101,15 @@ Type: Functional
 
 Steps:
 
-Open product page for ì14.1-inch Laptop.î
+Open product page for ‚Äú14.1-inch Laptop.‚Äù
 
-Click ìAdd to Cart.î
+Click ‚ÄúAdd to Cart.‚Äù
 
 Expected Result: Success message displayed, cart badge updates.
 
 Acceptance Criteria: Cart quantity = 1.
 
-TC_006 ñ Price Consistency Between PDP and Cart
+TC_006 ‚Äì Price Consistency Between PDP and Cart
 
 Objective: Ensure product price is the same on Product page and Cart.
 
@@ -129,7 +129,7 @@ Expected Result: Prices should match.
 
 Acceptance Criteria: No mismatch in price.
 
-TC_007 ñ Checkout Process
+TC_007 ‚Äì Checkout Process
 
 Objective: Verify user can proceed through checkout with dummy billing/shipping data.
 
@@ -153,7 +153,7 @@ Expected Result: Checkout proceeds successfully to payment.
 
 Acceptance Criteria: No validation errors.
 
-TC_008 ñ Order Confirmation
+TC_008 ‚Äì Order Confirmation
 
 Objective: Verify order is placed successfully.
 
@@ -173,7 +173,7 @@ Expected Result: Thank you message displayed.
 
 Acceptance Criteria: Order number is generated.
 
-TC_009 ñ Order Number Format Validation
+TC_009 ‚Äì Order Number Format Validation
 
 Objective: Ensure order number follows the correct format.
 
@@ -185,11 +185,11 @@ Steps:
 
 Capture order number from confirmation page.
 
-Expected Result: Order number matches ìOrder #12345î format.
+Expected Result: Order number matches ‚ÄúOrder #12345‚Äù format.
 
 Acceptance Criteria: Regex validation passes.
 
-TC_010 ñ Login with Blank Fields
+TC_010 ‚Äì Login with Blank Fields
 
 Objective: Validate behavior when login form is empty.
 
@@ -209,7 +209,7 @@ Expected Result: Validation error message appears.
 
 Acceptance Criteria: User is not logged in.
 
-TC_011 ñ Invalid Email Format During Registration
+TC_011 ‚Äì Invalid Email Format During Registration
 
 Objective: Verify error message for wrong email format.
 
@@ -227,11 +227,11 @@ Enter invalid email.
 
 Submit.
 
-Expected Result: ìWrong emailî error displayed.
+Expected Result: ‚ÄúWrong email‚Äù error displayed.
 
 Acceptance Criteria: Registration blocked.
 
-TC_012 ñ Missing Billing Address Fields
+TC_012 ‚Äì Missing Billing Address Fields
 
 Objective: Ensure mandatory billing fields are validated.
 
@@ -251,7 +251,7 @@ Expected Result: Error message shown.
 
 Acceptance Criteria: Cannot proceed.
 
-TC_013 ñ Multiple Products Cart Calculation
+TC_013 ‚Äì Multiple Products Cart Calculation
 
 Objective: Validate subtotal calculation with multiple products.
 
@@ -267,7 +267,7 @@ Check subtotal.
 
 Expected Result: Subtotal = sum of product prices.
 
-TC_014 ñ Shipping Method Selection
+TC_014 ‚Äì Shipping Method Selection
 
 Objective: Verify user can select a shipping method.
 
@@ -277,7 +277,7 @@ Type: Functional
 
 Expected Result: At least one shipping method selectable.
 
-TC_015 ñ Payment Method Selection
+TC_015 ‚Äì Payment Method Selection
 
 Objective: Confirm payment method selection works.
 
@@ -285,7 +285,7 @@ Priority: P2
 
 Type: Functional
 
-TC_016 ñ Logout
+TC_016 ‚Äì Logout
 
 Objective: Verify logout functionality.
 
@@ -293,7 +293,7 @@ Priority: P2
 
 Type: Functional
 
-TC_017 ñ Session Persistence
+TC_017 ‚Äì Session Persistence
 
 Objective: Verify user stays logged in after refreshing the page.
 
@@ -301,7 +301,7 @@ Priority: P2
 
 Type: Functional
 
-TC_018 ñ Cross Browser Compatibility
+TC_018 ‚Äì Cross Browser Compatibility
 
 Objective: Ensure site works on Chrome, Edge, Firefox.
 
@@ -309,7 +309,7 @@ Priority: P1
 
 Type: Compatibility
 
-TC_019 ñ Mobile Responsiveness
+TC_019 ‚Äì Mobile Responsiveness
 
 Objective: Validate UI on mobile screen size.
 
@@ -317,7 +317,7 @@ Priority: P2
 
 Type: UI/Compatibility
 
-TC_020 ñ Accessibility Checks
+TC_020 ‚Äì Accessibility Checks
 
 Objective: Confirm form fields and images meet accessibility standards.
 
